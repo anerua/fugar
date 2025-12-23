@@ -1,0 +1,117 @@
+body {
+    background-color: #2f2f2f;
+    color: white;
+    max-width: 600px;
+    margin: 40px auto 20px;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#title {
+    margin-bottom: 6px;
+}
+
+#title h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0 0 10px;
+}
+
+#title span {
+    font-size: 20px;
+}
+
+#intro {
+    max-width: 450px;
+}
+
+#links ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#links li a {
+    color:bisque;
+    text-underline-offset: 4px;
+}
+
+#experience ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#experience li {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.experience-date {
+    flex-basis: 20%;
+    font-size: 12px;
+}
+
+.experience-role {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.experience-role strong {
+    font-size: 14px;
+}
+
+.experience-role em {
+    font-size: 14px;
+}
+
+#lab ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#lab li {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.lab-title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.lab-title strong {
+    font-size: 14px;
+}
+
+.lab-title a {
+    color: bisque;
+    text-underline-offset: 4px;
+}
+
+#lab em {
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+}
