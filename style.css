@@ -15,6 +15,11 @@ main {
     gap: 8px;
 }
 
+a {
+    color:bisque;
+    text-underline-offset: 4px;
+}
+
 #title {
     margin-bottom: 6px;
 }
@@ -38,11 +43,6 @@ main {
     gap: 16px;
     list-style-type: none;
     padding: 0;
-}
-
-#links li a {
-    color:bisque;
-    text-underline-offset: 4px;
 }
 
 #experience ul {
@@ -101,11 +101,6 @@ main {
 
 .lab-title strong {
     font-size: 14px;
-}
-
-.lab-title a {
-    color: bisque;
-    text-underline-offset: 4px;
 }
 
 #lab em {
