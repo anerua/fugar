@@ -1,7 +1,7 @@
 body {
     background-color: #2f2f2f;
     color: white;
-    max-width: 600px;
+    max-width: 500px;
     margin: 40px auto 20px;
     font-family: monospace;
     display: flex;
@@ -15,23 +15,52 @@ main {
     gap: 8px;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    color: goldenrod;
+}
+
 a {
-    color:bisque;
+    color: violet;
     text-underline-offset: 4px;
+    width: max-content;
+}
+
+#profile-image {
+    display: flex;
+    align-items: center;
+}
+
+#profile-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: goldenrod;
 }
 
 #title {
-    margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 #title h1 {
     font-size: 36px;
     font-weight: 900;
-    margin: 0 0 10px;
+    margin: 0;
 }
 
 #title span {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 900;
+    color: goldenrod;
 }
 
 #intro {
@@ -40,6 +69,7 @@ a {
 
 #links ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     list-style-type: none;
     padding: 0;
@@ -54,21 +84,21 @@ a {
 }
 
 #experience li {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
     align-items: center;
-    column-gap: 10px;
+    gap: 10px;
 }
 
 .experience-date {
-    flex-basis: 20%;
     font-size: 12px;
+    color: beige;
 }
 
 .experience-role {
-    flex-basis: 80%;
     display: flex;
     flex-direction: column;
-    row-gap: 4px;
+    gap: 4px;
 }
 
 .experience-role strong {
@@ -105,8 +135,81 @@ a {
 
 #lab em {
     font-size: 12px;
+    color: beige;
 }
 
 footer {
     text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+    body {
+        padding: 0 20px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #title {
+        align-items: center;
+    }
+
+    #title h1 {
+        text-align: center;
+    }
+
+    #title span {
+        text-align: center;
+    }
+
+    #intro p {
+        text-align: justify;
+    }
+
+    #links ul {
+        justify-content: center;
+    }
+
+    #experience ul {
+        padding: 0;
+        gap: 32px;
+    }
+
+    #experience li {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-date {
+        text-align: center;
+    }
+
+    .experience-role {
+        text-align: center;
+    }
+
+    #lab ul {
+        padding: 0;
+        gap: 32px;
+    }
+
+    #lab li strong, em {
+        text-align: center;
+    }
+
+    #lab li span {
+        text-align: justify;
+    }
+
+    .lab-title a {
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
 }
